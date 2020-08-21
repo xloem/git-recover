@@ -1,0 +1,32 @@
+It is unfortunate that some of the work in this repository has been apparently lost.
+
+2020-08-21:
+	object files:
+		the format of these files is documented in the 'internals' section of the git manual, at git-scm.com
+	.pack v2 files (network byte order):
+		4-bytes: 'PACK'
+		4-bytes: 0x2
+		4-bytes: object-count
+		[object-count objects:
+			3-bits: type (1=COMMIT,2=TREE,3=BLOB,4=TAG,6=OFS_DELTA,7=REF_DELTA)
+			(n-1)*7+4-bits: length
+			compressed data
+		]
+		checksum
+	.idx v2 files:
+		4-bytes: '\377t0c'
+		4-bytes: 0x2
+		fan-out table
+		sorted object name table
+		CRC32 table
+		offset32 table
+		offset64 table
+		pack-checksum
+		index-checksum
+
+	i am not nearly as capable now as i was when i first attempted this.
+	an approach could be to search for packfiles, index files, and just plain textual commit hashes
+	and form a hash index of the disk to find things with the appropriate hashes
+	keeping a table of what hashes are needed, adding on to it as more are found
+		leaves out fragmented content though
+		in our present situation we are mostly looking for just a couple commits, likely unpacked and referenced in HEAD
