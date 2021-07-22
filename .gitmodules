@@ -7,9 +7,3 @@
 [submodule "extern/sleuthkit"]
 	path = extern/sleuthkit
 	url = https://github.com/sleuthkit/sleuthkit.git
-[submodule "extern/itsy_bitsy"]
-	path = extern/itsy_bitsy
-	url = https://github.com/ThePhD/itsy_bitsy.git
-[submodule "extern/dynamic_bitset"]
-	path = extern/dynamic_bitset
-	url = https://github.com/pinam45/dynamic_bitset.git
