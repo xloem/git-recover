@@ -30,3 +30,6 @@ It is unfortunate that some of the work in this repository has been apparently l
 	keeping a table of what hashes are needed, adding on to it as more are found
 		leaves out fragmented content though
 		in our present situation we are mostly looking for just a couple commits, likely unpacked and referenced in HEAD
+2021-07-22
+	othery recover tools could be linked with to handle some fragmented content, too, possibly
+	aside from that ranking indicators of possible fragmentation uniting would help
