@@ -1,5 +1,8 @@
 It is unfortunate that some of the work in this repository has been apparently lost.
 
+This is not a complex task.  A disk is scanned for possible data, and they are combined
+and recovered.
+
 2020-08-21:
 	object files:
 		the format of these files is documented in the 'internals' section of the git manual, at git-scm.com

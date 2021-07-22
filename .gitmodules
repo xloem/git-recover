@@ -4,3 +4,6 @@
 [submodule "extern/git"]
 	path = extern/git
 	url = https://github.com/git/git.git
+[submodule "extern/sleuthkit"]
+	path = extern/sleuthkit
+	url = https://github.com/sleuthkit/sleuthkit.git
