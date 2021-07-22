@@ -34,3 +34,9 @@ It is unfortunate that some of the work in this repository has been apparently l
 2021-07-22
 	other recovery tools could be linked with to handle some fragmented content, too, possibly
 	aside from that ranking indicators of possible fragmentation uniting would help
+
+	some tools for finding offsets of a file:
+		hdparm --fibmap # shows all extents of single file.  fiemap and fibmap are ioctls.
+		filefrag -v # does not require root
+		debugfs -R "stat <inode>" /dev/sda 
+		debugfs -R "stat /path/name" /dev/sda # extents at bottom
