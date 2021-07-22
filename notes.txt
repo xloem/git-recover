@@ -2,6 +2,7 @@ It is unfortunate that some of the work in this repository has been apparently l
 
 This is not a complex task.  A disk is scanned for possible data, and they are combined
 and recovered.
+	[Later: more data can be recovered if the idea of 'multiple possibilities' is kept in mind.]
 
 2020-08-21:
 	object files:
