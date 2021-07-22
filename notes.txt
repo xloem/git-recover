@@ -3,6 +3,7 @@ It is unfortunate that some of the work in this repository has been apparently l
 2020-08-21:
 	object files:
 		the format of these files is documented in the 'internals' section of the git manual, at git-scm.com
+		[update 2021:] and in Documentation/technical/*-format.txt in the git source
 	.pack v2 files (network byte order):
 		4-bytes: 'PACK'
 		4-bytes: 0x2
@@ -31,5 +32,5 @@ It is unfortunate that some of the work in this repository has been apparently l
 		leaves out fragmented content though
 		in our present situation we are mostly looking for just a couple commits, likely unpacked and referenced in HEAD
 2021-07-22
-	othery recover tools could be linked with to handle some fragmented content, too, possibly
+	other recovery tools could be linked with to handle some fragmented content, too, possibly
 	aside from that ranking indicators of possible fragmentation uniting would help
